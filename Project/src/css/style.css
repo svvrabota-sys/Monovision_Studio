@@ -35,10 +35,12 @@ img {
 	--dark-color: #221f20;
 	--container-padding-inline: 13%;
 	--footer-padding-inline: 10%;
+
 	@media screen and (max-width: 768px) {
 		--container-padding-inline: 6%;
 		--footer-padding-inline: 6%;
 	}
+
 	@media screen and (max-width: 576px) {
 		--container-padding-inline: 15px;
 		--footer-padding-inline: 15px;
@@ -60,9 +62,11 @@ html {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+
 	span {
 		position: relative;
 	}
+
 	span::after {
 		content: "";
 		display: block;
@@ -80,11 +84,13 @@ html {
 	min-height: 100vh;
 	background: url("../img/main_bg.jpg") center center / cover no-repeat;
 	padding-top: 75px;
+
 	@media screen and (max-width: 768px) {
 		& {
 			background-image: url("../img/tablet_bg.jpg");
 		}
 	}
+
 	@media screen and (max-width: 576px) {
 		min-height: 500px;
 		padding-top: 50px;
@@ -92,14 +98,16 @@ html {
 }
 
 .promo__title {
-	color: var(--light-color, #f5f5f7);
+	color: red;
 	font-size: 60px;
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
+
 	@media screen and (max-width: 768px) {
 		font-size: 48px;
 	}
+
 	@media screen and (max-width: 576px) {
 		font-size: 26px;
 	}
@@ -111,11 +119,13 @@ html {
 	font-size: 32px;
 	font-weight: 100;
 	line-height: normal;
+
 	@media screen and (max-width: 768px) {
 		& {
 			margin-top: 80px;
 		}
 	}
+
 	@media screen and (max-width: 576px) {
 		margin-top: 30px;
 		font-size: 16px;
@@ -139,6 +149,7 @@ html {
 	line-height: normal;
 	cursor: pointer;
 	transition: all 0.3s ease-out;
+
 	@media screen and (max-width: 576px) {
 		font-size: 14px;
 		width: 120px;
@@ -159,13 +170,16 @@ html {
 	font-style: normal;
 	font-weight: 100;
 	line-height: normal;
+
 	address {
 		font-style: normal;
 	}
+
 	a {
 		color: inherit;
 		text-decoration: none;
 	}
+
 	&::before {
 		content: "";
 		display: block;
@@ -176,19 +190,23 @@ html {
 		height: 49px;
 		background: url("../icons/arrow.svg") center center / cover no-repeat;
 	}
+
 	@media screen and (max-width: 768px) {
 		& {
 			margin-top: 80px;
 		}
+
 		&::before {
 			left: -40px;
 		}
 	}
+
 	@media screen and (max-width: 750px) {
 		&::before {
 			display: none;
 		}
 	}
+
 	@media screen and (max-width: 576px) {
 		margin-top: 233px;
 	}
@@ -203,12 +221,11 @@ html {
 	padding: 0 360px;
 	width: 100%;
 	height: 20px;
-	background: linear-gradient(
-		180deg,
-		rgba(255, 255, 255, 0.04) 0%,
-		rgba(255, 255, 255, 0.12) 50%,
-		rgba(255, 255, 255, 0.2) 100%
-	);
+	background: linear-gradient(180deg,
+			rgba(255, 255, 255, 0.04) 0%,
+			rgba(255, 255, 255, 0.12) 50%,
+			rgba(255, 255, 255, 0.2) 100%);
+
 	li {
 		list-style-type: none;
 		color: var(--light-color, #f5f5f7);
@@ -216,20 +233,24 @@ html {
 		font-weight: 100;
 		line-height: normal;
 	}
+
 	@media screen and (max-width: 1440px) {
 		& {
 			padding: 0 20px;
 		}
 	}
+
 	@media screen and (max-width: 768px) {
 		& li:nth-last-child(-n + 6) {
 			display: none;
 		}
 	}
+
 	@media screen and (max-width: 576px) {
 		& {
 			margin-top: 10px;
 		}
+
 		& li:nth-last-child(-n + 11) {
 			display: none;
 		}
@@ -239,6 +260,7 @@ html {
 .about {
 	padding-top: 80px;
 	background-color: var(--light-color);
+
 	@media screen and (max-width: 576px) {
 		padding-top: 50px;
 	}
@@ -259,15 +281,19 @@ html {
 	font-size: 40px;
 	font-weight: 400;
 	line-height: normal;
+
 	span {
 		color: #a5a5a5;
 	}
+
 	@media screen and (max-width: 1440px) {
 		width: 100%;
 	}
+
 	@media screen and (max-width: 768px) {
 		font-size: 24px;
 	}
+
 	@media screen and (max-width: 375px) {
 		font-size: 16px;
 	}
@@ -277,11 +303,13 @@ html {
 	display: flex;
 	column-gap: 10px;
 	margin-top: 80px;
+
 	@media screen and (max-width: 768px) {
 		margin-top: 40px;
 		flex-wrap: wrap;
 		row-gap: 40px;
 	}
+
 	@media screen and (max-width: 375px) {
 		margin-top: 20px;
 		row-gap: 20px;
@@ -290,10 +318,12 @@ html {
 
 .services__items {
 	width: 50%;
+
 	ul {
 		margin-top: 20px;
 		padding: 0;
 	}
+
 	li {
 		position: relative;
 		margin-top: 10px;
@@ -303,6 +333,7 @@ html {
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
+
 		&:first-child::before {
 			content: "";
 			display: block;
@@ -313,6 +344,7 @@ html {
 			height: 15px;
 			background: url("../icons/camera.svg") center center / cover no-repeat;
 		}
+
 		&:nth-child(3):before {
 			content: "";
 			display: block;
@@ -324,25 +356,31 @@ html {
 			background: url("../icons/edit.svg") center center / cover no-repeat;
 		}
 	}
+
 	@media screen and (max-width: 768px) {
 		& {
 			width: 100%;
 		}
+
 		& li:first-child::before {
 			left: -25px;
 		}
+
 		& li:nth-child(3):before {
 			left: -25px;
 		}
 	}
+
 	@media screen and (max-width: 576px) {
 		& li:first-child::before {
 			display: none;
 		}
+
 		& li:nth-child(3):before {
 			display: none;
 		}
 	}
+
 	@media screen and (max-width: 375px) {
 		& li {
 			font-size: 14px;
@@ -357,6 +395,7 @@ html {
 	font-style: italic;
 	font-weight: 400;
 	line-height: normal;
+
 	@media screen and (max-width: 375px) {
 		font-size: 12px;
 	}
@@ -369,9 +408,11 @@ html {
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.4px;
+
 	@media screen and (max-width: 768px) {
 		width: 100%;
 	}
+
 	@media screen and (max-width: 375px) {
 		font-size: 12px;
 		letter-spacing: 0.24px;
@@ -390,6 +431,7 @@ html {
 	column-gap: 30px;
 	row-gap: 50px;
 	margin-top: 50px;
+
 	img {
 		width: 100%;
 		box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
@@ -407,6 +449,7 @@ html {
 	grid-template-rows: repeat(2, 1fr);
 	gap: 30px;
 	margin-top: 50px;
+
 	img {
 		width: 100%;
 		box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
@@ -433,6 +476,7 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+
 	img {
 		width: calc((100% - 90px) / 4);
 		box-shadow: 7px 7px 12px 0px rgba(0, 0, 0, 0.25);
@@ -466,17 +510,20 @@ html {
 	display: flex;
 	column-gap: 30px;
 	list-style: none;
+
 	li {
 		width: 32px;
 		height: 32px;
 		border: 1px solid var(--light-color, #f5f5f7);
 		background: rgba(217, 217, 217, 0);
+
 		a {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			width: 100%;
 			height: 100%;
+
 			img {
 				width: 22px;
 				height: 22px;
